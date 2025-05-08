@@ -18,7 +18,7 @@ third-party libraries.
 - ViewModel for data management
 - ViewBinding for view access
 
-# #Media:
+## Media:
 
 ![Screenshot_20250508_222329](https://github.com/user-attachments/assets/18ccc14a-e4a9-4800-a641-8cb9229acf43)
 ![Screenshot_20250508_222317](https://github.com/user-attachments/assets/cf14e16c-9c18-4334-9484-5217fccdf00f)
