@@ -1,6 +1,7 @@
 package com.example.instabug_weatherapp
 
 import android.Manifest
+import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.location.Location
@@ -99,14 +100,20 @@ class MainActivity : AppCompatActivity() {
         - Handles the click event of the search button
         - Gets the city name from the input field
         - If city is not empty calls the loadWeatherByCity function in the viewModel to get the weather data for the given city
+        - If city is empty shows a toast message
+        - Hides the keyboard
          */
         binding.searchBtn.setOnClickListener {
             val city = binding.cityInput.text.toString().trim()
             if (city.isNotEmpty()) {
                 viewModel.loadWeatherByCity(city)
+                (getSystemService(INPUT_METHOD_SERVICE) as android.view.inputmethod.InputMethodManager).hideSoftInputFromWindow(
+                    binding.cityInput.windowToken, 0
+                )
             } else {
                 Toast.makeText(this, "Please enter a city", Toast.LENGTH_SHORT).show()
             }
+            binding.cityInput.clearFocus()
         }
 
         /*
