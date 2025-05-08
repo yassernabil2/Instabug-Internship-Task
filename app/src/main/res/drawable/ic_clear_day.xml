@@ -1,0 +1,26 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Sun Circle -->
+    <path
+        android:fillColor="#FFEB3B"
+        android:pathData="M12,8a4,4 0 1,1 0,8 4,4 0 0,1 0,-8z" />
+
+    <!-- Rays (horizontal) -->
+    <path
+        android:fillColor="#FFEB3B"
+        android:pathData="M12,2h0M12,22h0" />
+
+    <!-- Rays (vertical) -->
+    <path
+        android:fillColor="#FFEB3B"
+        android:pathData="M2,12h2M22,12h2" />
+
+    <!-- Diagonal Rays -->
+    <path
+        android:fillColor="#FFEB3B"
+        android:pathData="M16,16l2,2M6,6l-2,-2M6,16l-2,2M16,6l2,-2" />
+</vector>
